@@ -21,8 +21,8 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        echo 'Deploying the app to AWS server'
         input(message: 'Want to deploy?', id: 'Ok')
+        echo 'Deploying the app to AWS server'
       }
     }
 
